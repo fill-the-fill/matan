@@ -298,7 +298,7 @@
         ".media ul li",
         2,
         {
-          y: 20,
+          // y: 20,
           opacity: 0,
           ease: Expo.easeInOut,
           delay: 0.1
@@ -306,7 +306,7 @@
         0.1
       );
 
-      t1.to(".overlay", 1, {
+      t1.to(".overlay", 0, {
         opacity: 1,
         ease: Expo.easeInOut,
       });
@@ -316,12 +316,12 @@
         ease: Expo.easeInOut
       });
 
-      t1.staggerFrom(
-        ".menu ul li",
-        1,
-        { y: 50, opacity: 0,},
-        0.1
-      );
+      // t1.staggerFrom(
+      //   ".menu ul li",
+      //   1,
+      //   {y: 50, opacity: 0},
+      //   0.1
+      // );
 
       t1.reverse();
       $(document).on("click", ".menu-toggle", function() {
