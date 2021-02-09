@@ -211,7 +211,7 @@ body {
 }
 
 .pdf-link {
-  margin: 50px 0;
+  margin: 30px 0 50px 0;
 }
 
 .pdf-link a {
@@ -231,8 +231,24 @@ body {
 
 .project-section {
   background: #0f0f0f;
-  padding-top: 120px;
+  padding-top: 60px;
   overflow: hidden;
+}
+
+.resume {
+  text-align: center;
+  font-size: 50px !important;
+}
+
+.portfolio{
+  font-size: 50px !important;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.portfolio-1 {
+  font-size: 25px !important;
+  text-align: center;
 }
 
 .project-section h1 {
