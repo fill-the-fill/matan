@@ -206,7 +206,7 @@ body {
 .about-link a:hover {
   text-decoration: none;
   color: white;
-  background: orange;
+  background: black;
   cursor: pointer;
 }
 
@@ -225,7 +225,7 @@ body {
 .pdf-link a:hover {
   text-decoration: none;
   color: white;
-  background: orange;
+  background: black;
   cursor: pointer;
 }
 
