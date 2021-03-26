@@ -27,6 +27,12 @@ body {
   font-style: 16px;
   mix-blend-mode: difference;
   z-index: 2;
+  text-decoration: none;
+}
+
+.hero-logo :hover {
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .menu-toggle {
@@ -285,6 +291,7 @@ body {
 .social-media {
   padding: 0 0;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .social-media h1 {
