@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="ig: @harrnish / @codegridweb" />
-    <link rel="icon" href="hero-bg.jpg">
+    <link rel="icon" href="headshots/hero-bg.jpg">
     <title>Contact - Matan Horowitz</title>
     <link rel="stylesheet" href="style.css" />
 
@@ -103,7 +103,7 @@
                         <h1 class="wow fadeInUp" data-wow-delay="0.2s">Reach out</h1>
                     </div>
                     <div class="sm-content col-lg-6" style="padding-top: 20px; font-size: 20px;">
-                        <p class="wow fadeInUp" data-wow-delay="0.5s">
+                        <p class="wow fadeInUp reactOut" data-wow-delay="0.5s">
                             If you want to reach me please email me or shoot me a text!
                         </p>
                         <div class="wow fadeInUp" style="font-size: 20px;" data-wow-delay="0.4s">
@@ -181,7 +181,8 @@
 
         t1.to(".overlay", 1, {
             opacity: 1,
-            ease: Expo.easeInOut
+            ease: Expo.easeInOut,
+            zIndex: 4,
         });
 
         t1.to(".view-photos, .media", 1, {

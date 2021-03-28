@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="author" content="ig: @harrnish / @codegridweb" />
-  <link rel="icon" href="hero-bg.jpg">
+  <link rel="icon" href="headshots/hero-bg.jpg">
   <title>Acting - Matan Horowitz</title>
   <link rel="stylesheet" href="style.css" />
 
@@ -62,12 +62,12 @@
 
       <!-- HERO-IMAGE -->
       <div class="hero-img">
-        <img src="headshots/workInProgress.png" class="about-img" style="width: 30%; display: block; margin: auto; margin-bottom: 200px;" />
+        <img src="headshots/aboutme.jpg" class="about-img"/>
       </div>
 
       <!-- HERO-TITLE -->
       <div class="hero-title">
-        <h1>COMING SOON</h1>
+        <h1>ACTING</h1>
       </div>
       <div class="overlay">
         <div class="close-btn">
@@ -93,6 +93,19 @@
           </ul>
         </div>
       </div>
+    </section>
+    
+    <a name="projects"></a>
+    <section class="project-section">
+      <div class="container-fluid">
+        <h1 class="wow fadeInUp resume" data-wow-delay="0.3s" style="padding-bottom: 69px;">RESUME</h1>
+        <div class="resume">
+          <img src="headshots/resume.png"/>
+        </div>
+        <div class="pdf-link wow fadeInUp resume-button" data-wow-delay="0.6s">
+            <a style="z-index: 5;"href="Horowitz_Matan_Resume.pdf">DOWNLOAD RESUME</a>
+        </div>
+        
     </section>
   </div>
   <script>
@@ -155,7 +168,8 @@
 
     t1.to(".overlay", 1, {
       opacity: 1,
-      ease: Expo.easeInOut
+      ease: Expo.easeInOut,
+      zIndex: 4,
     });
 
     t1.to(".view-photos, .media", 1, {

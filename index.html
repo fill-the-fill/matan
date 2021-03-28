@@ -65,7 +65,7 @@
 
         <!-- HERO-IMAGE -->
         <div class="hero-img">
-          <img src="headshots/hero-bg.jpg" class="hero-img-parallax" />
+          <img src="headshots/aboutme.jpg" class="about-img"/>
         </div>
 
         <!-- HERO-TITLE -->
@@ -73,9 +73,7 @@
           <h1>MATAN.HOROWITZ</h1>
         </div>
         <div class="overlay">
-          <div class="close-btn">
-            <ion-icon name="close"></ion-icon>
-          </div>
+
           <div class="menu">
             <ul>
               <li>
@@ -105,13 +103,13 @@
               <div class="project project-1 col-lg-6">
                 <img
                   src="projectPhotos/project-1.jpg"
-                  class="project-1-img project-img img-responsive fit-image"
+                  class=" project-img img-responsive fit-image"
                 />
               </div>
               <div class="project project-2 col-lg-6">
                 <img
                   src="projectPhotos/project-2.jpg"
-                  class="project-2-img project-img img-responsive fit-image"
+                  class=" project-img img-responsive fit-image"
                 />
               </div>
             </div>
@@ -122,26 +120,22 @@
       <section class="about-section">
         <div class="container">
           <div class="row">
-            <div class="about-heading col-lg-6">
-              <h1 class="wow fadeInUp" data-wow-delay="0.2s">About</h1>
-            </div>
-            <div class="about-content col-lg-6">
-              <h3 class="wow fadeInUp" data-wow-delay="0.3s">
-                Hello and welcome to my website!
+            <div class="about-content col-lg-5">
+              <h3 class="come-text wow fadeInUp" data-wow-delay="0.3s">
+                Come and look around!
               </h3>
-              <p class="wow fadeInUp" data-wow-delay="0.4s">
-                I’m a young actor, photographer, and artist. I consider myself a global nomad as I grew up in Venezuela,
-                Tanzania, and Israel. Growing up overseas has really influenced how I see the world and how I attempt to
-                communicate that through my art.
-              </p>
-              <p class="wow fadeInUp" data-wow-delay="0.5s">
-                I want us to think about how our actions affect the global community and the ramifications the smallest of
-                changes can make. I believe that humour is not only a way to connect with people but also a way to cope
-                with the stresses of life and I try to live my life with that in mind.
-              </p>
+            </div>
               <div class="about-link wow fadeInUp" data-wow-delay="0.6s">
-                <a href="about.html">MORE INFO</a>
-              </div>
+              <a href="about.html">ABOUT ME</a>
+            </div>
+            <div class="about-link wow fadeInUp" data-wow-delay="0.6s">
+                <a href="acting.html">ACTING</a>
+            </div>
+            <div class="about-link wow fadeInUp" data-wow-delay="0.6s">
+                <a href="photography.html">PHOTOS</a>
+            </div>
+            <div class="about-link wow fadeInUp" data-wow-delay="0.6s">
+                <a href="contact.html">CONTACT</a>
             </div>
           </div>
         </div>
@@ -154,13 +148,13 @@
               <div class="project project-1 col-lg-6">
                 <img
                   src="projectPhotos/project-3.jpg"
-                  class="project-3-img project-img img-responsive fit-image"
+                  class=" project-img img-responsive fit-image"
                 />
               </div>
               <div class="project project-2 col-lg-6">
                 <img
                   src="projectPhotos/project-4.jpg"
-                  class="project-4-img project-img img-responsive fit-image"
+                  class=" project-img img-responsive fit-image"
                 />
               </div>
             </div>
@@ -176,7 +170,7 @@
               <h1 class="wow fadeInUp" data-wow-delay="0.2s">Reach out</h1>
             </div>
             <div class="sm-content col-lg-6">
-              <p class="wow fadeInUp" style="padding-top: 20px"data-wow-delay="0.5s">
+              <p class="wow fadeInUp reactOut" style="padding-top: 20px;"data-wow-delay="0.5s">
                   If you want to reach me please email me or shoot me a text!
               </p>
               <div class="wow fadeInUp" style="font-size: 20px;" data-wow-delay="0.4s">
@@ -188,21 +182,6 @@
                   301-222-3596
               </div>
             </div>
-          </div>
-          <div class="col-lg-12 text-left">
-            <!-- <div class="social-icons">
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay="0.7s">
-                  <a to="https://www.facebook.com/matan.horowitz">fasscebook</a>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="0.8s">
-                  <a href="#">instagram</a>
-                </li>
-                <li class="wow fadeInUp" data-wow-delay="0.9s">
-                  <a href="www.twitter.com/matan">twitter</a>
-                </li>
-              </ul>
-            </div> -->
           </div>
         </div>
       </section>
@@ -265,6 +244,7 @@
       t1.to(".overlay", 1, {
         opacity: 1,
         ease: Expo.easeInOut,
+        zIndex: 4,
       });
 
       t1.to(".view-photos, .media", 1, {
@@ -295,7 +275,7 @@
 
       var image = document.getElementsByClassName("hero-img-parallax");
       new simpleParallax(image, {
-        // scale: 
+        scale: 1.8
       });
 
       var image = document.getElementsByClassName("project-1-img");

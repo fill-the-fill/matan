@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="author" content="ig: @harrnish / @codegridweb" />
-  <link rel="icon" href="headshots/aboutMeHeader.jpg">
+  <link rel="icon" href="headshots/hero-bg.jpg">
   <title>About - Matan Horowitz</title>
   <link rel="stylesheet" href="style.css" />
 
@@ -62,7 +62,7 @@
 
       <!-- HERO-IMAGE -->
       <div class="hero-img">
-        <img src="headshots/aboutHeader.jpg" class="about-img" />
+        <img src="headshots/About.jpg" class="about-img" />
       </div>
 
       <!-- HERO-TITLE -->
@@ -121,15 +121,6 @@
       </div>
     </section>
 
-    <a name="projects"></a>
-    <section class="project-section">
-      <div class="container-fluid">
-        <h1 class="wow fadeInUp resume" data-wow-delay="0.3s">RESUME</h1>
-        <div class="pdf-link wow fadeInUp resume" data-wow-delay="0.6s">
-          <a href="#PORTFOLIO">DOWNLOAD RESUME</a>
-        </div>
-        
-    </section>
   </div>
   <script>
     new WOW().init();
@@ -191,7 +182,8 @@
 
     t1.to(".overlay", 1, {
       opacity: 1,
-      ease: Expo.easeInOut
+      ease: Expo.easeInOut,
+      zIndex: 4,
     });
 
     t1.to(".view-photos, .media", 1, {

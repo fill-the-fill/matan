@@ -26,7 +26,7 @@ body {
   font-family: "Cosi Azure";
   font-style: 16px;
   mix-blend-mode: difference;
-  z-index: 2;
+  z-index: 4;
   text-decoration: none;
 }
 
@@ -46,7 +46,9 @@ body {
 .menu-toggle ion-icon {
   font-style: 16px;
 }
-
+menu {
+  cursor: pointer;
+}
 .overlay {
   position: fixed;
   width: 100%;
@@ -78,6 +80,7 @@ body {
   .overlay ul li {
     font-size: 30px;
     padding: 10px 0;
+    margin-left: 50px;
   }
 }
 
@@ -131,16 +134,59 @@ body {
   color: white;
 }
 
+.resume {
+  display: block;
+   margin: auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
 .hero-img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  margin: 0 auto;
+  height: auto;
+  border: none;
+  display: block;
+  padding: 5px 0;
 }
 
 .hero-img img {
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-heading {
+    display: none;
+  }
+  .hero-img {
+    min-width: 80%;
+  }
+  h1{
+    font-size: 40px !important;
+  }
+  .about-link {
+    padding: 20px !important;
+    display: block;
+    margin: auto;
+  }
+  .come-text{
+    text-align: center;
+  }
+  .about-section {
+    padding: 60px 0px !important;
+  }
+  .social-media {
+    margin-top: 60px !important;
+    margin-top: 60px !important;
+  }
+}
+
+.about-link {
+  padding: 5px;
 }
 
 .hero-title {
@@ -196,9 +242,6 @@ body {
   font-style: italic;
 }
 
-.about-link {
-  margin: 50px 0;
-}
 
 .about-link a {
   color: black;
@@ -240,7 +283,7 @@ body {
   overflow: hidden;
 }
 
-.resume {
+.resume-button {
   text-align: center;
   font-size: 50px !important;
 }
