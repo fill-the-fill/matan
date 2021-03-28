@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -38,6 +40,33 @@
 
   <!-- SIMPLE PARALLAX -->
   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    body{width: 100%; height: 100%; margin: 0;}
+    #appear_image_div{width: 100%; height: 100%; position: absolute; z-index: 10; opacity: 0.7; background-color: 'red'}
+    #appear_image{display: block; margin: auto; position: relative; z-index: 11;}
+  </style>
+
+  <script type=text/javascript>
+   jQuery(function($) {
+     $('#my_image').click(function(){
+       let img = $(this).attr("src");
+       let appear_image = "<div id='appear_image_div' onClick='closeImage()'></div>"
+       appear_image = appear_image.concat("<img id='appear_image' src='"+img+"' class='project-1-img project-img img-responsive fit-image' />")
+       $('body').append(appear_image);
+     })
+   })
+
+   function closeImage() {
+     $("#appear_image_div").remove();
+     $("#appear_image").remove();
+   }
+    
+  </script>
+
 </head>
 
 <body>
@@ -64,7 +93,7 @@
 
       <!-- HERO-IMAGE -->
       <div class="hero-img">
-        <img src="hero-bg.jpg" class="about-img" />
+        <img src="headshots/matanPhotography.jpg" class="about-img" />
       </div>
 
       <!-- HERO-TITLE -->
@@ -100,9 +129,9 @@
     <section class="about-section">
       <div class="container">
         <div class="row">
-          <div class="about-heading col-lg-6">
+          <!-- <div class="about-heading col-lg-6">
             <img src="matanPhotography.jpg" class="project-1-img" height="310px" />
-          </div>
+          </div> -->
           <div class="about-content col-lg-6">
             <h3 class="wow fadeInUp" data-wow-delay="0.3s">
               I love taking photos on film. 
@@ -123,42 +152,42 @@
       <div class="projects">
         <div class="row project-row">
           <div class="project project-1 col-lg-6">
-            <img src="projectPhotos/project-1.jpg" class="project-1-img project-img img-responsive fit-image" />
+            <img id="my_image"src="projectPhotos/project-1.jpg" class=" project-img img-responsive fit-image" />
           </div>
           <div class="project project-2 col-lg-6">
-            <img src="projectPhotos/project-2.jpg" class="project-2-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-2.jpg" class=" project-img img-responsive fit-image" />
           </div>
         </div>
         <div class="row project-row">
           <div class="project project-3 col-lg-6">
-            <img src="projectPhotos/project-3.jpg" class="project-3-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-3.jpg" class=" project-img img-responsive fit-image" />
           </div>
           <div class="project project-4 col-lg-6">
-            <img src="projectPhotos/project-4.jpg" class="project-4-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-4.jpg" class=" project-img img-responsive fit-image" />
           </div>
         </div>
         <div class="row project-row">
           <div class="project project-5 col-lg-6">
-            <img src="projectPhotos/project-5.jpg" class="project-5-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-5.jpg" class="project-img img-responsive fit-image" />
           </div>
           <div class="project project-6 col-lg-6">
-            <img src="projectPhotos/project-6.jpg" class="project-6-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-6.jpg" class=" project-img img-responsive fit-image" />
           </div>
         </div>
         <div class="row project-row">
           <div class="project project-5 col-lg-6">
-            <img src="projectPhotos/project-7.jpg" class="project-7-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-7.jpg" class=" project-img img-responsive fit-image" />
           </div>
           <div class="project project-6 col-lg-6">
-            <img src="projectPhotos/project-8.jpg" class="project-8-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-8.jpg" class=" project-img img-responsive fit-image" />
           </div>
         </div>
         <div class="row project-row">
           <div class="project project-5 col-lg-6">
-            <img src="projectPhotos/project-9.jpg" class="project-9-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-9.jpg" class=" project-img img-responsive fit-image" />
           </div>
           <div class="project project-6 col-lg-6">
-            <img src="projectPhotos/project-10.jpg" class="project-10-img project-img img-responsive fit-image" />
+            <img src="projectPhotos/project-10.jpg" class=" project-img img-responsive fit-image" />
           </div>
         </div>
       </div>
